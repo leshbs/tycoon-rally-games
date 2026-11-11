@@ -1,0 +1,20 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #edf5ff; background: #081321; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, select { font: inherit; }
+button { border: 0; border-radius: 10px; padding: .7rem 1rem; background: #7cc6fe; color: #082033; font-weight: 700; }
+button:disabled { opacity: .55; }
+.top-nav { display: flex; gap: 1rem; align-items: center; padding: 1rem 5vw; background: #0f2138; }
+.top-nav a { color: #c7ddf3; text-decoration: none; }
+.top-nav a:first-child { color: #fff; font-weight: 800; margin-right: auto; }
+.landing, .form-page, .table-page { max-width: 960px; margin: 3rem auto; padding: 0 1.2rem; }
+.tycoon-page { padding: 1rem; max-width: 1300px; margin: auto; }
+.tycoon-hud, .shop-panel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; }
+.tycoon-hud > div, .shop-panel article { background: #102943; border-radius: 14px; padding: 1rem; }
+.tycoon-hud span { display: block; color: #aac5dc; font-size: .85rem; }
+.tycoon-hud strong { font-size: 1.3rem; }
+.game-canvas { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 16px; background: #0f1b2d; }
+.shop-panel h2 { margin: 0; font-size: 1rem; }.shop-panel p { color: #bdd4e7; }
+.form-page { display: grid; gap: 1rem; max-width: 480px; }.form-page h1, .form-page p { margin: 0; }.form-page label { display: grid; gap: .4rem; }.form-page select { padding: .65rem; border-radius: 8px; }.success { color: #78e08f; }
+table { width: 100%; border-collapse: collapse; background: #102943; border-radius: 14px; overflow: hidden; }th, td { padding: .85rem; text-align: left; border-bottom: 1px solid #244563; }
+@media (max-width: 640px) { .top-nav { flex-wrap: wrap; }.top-nav a:first-child { width: 100%; }.tycoon-hud, .shop-panel { grid-template-columns: 1fr; } }

@@ -1,0 +1,21 @@
+alter table public.events enable row level security;
+alter table public.teams enable row level security;
+alter table public.positions enable row level security;
+alter table public.rounds enable row level security;
+alter table public.round_assignments enable row level security;
+alter table public.tycoons enable row level security;
+alter table public.shop_catalog enable row level security;
+alter table public.team_shops enable row level security;
+alter table public.position_results enable row level security;
+alter table public.economy_transactions enable row level security;
+
+create policy "authenticated users may read event data" on public.events for select to authenticated using (true);
+create policy "authenticated users may read teams" on public.teams for select to authenticated using (true);
+create policy "authenticated users may read positions" on public.positions for select to authenticated using (true);
+create policy "authenticated users may read rounds" on public.rounds for select to authenticated using (true);
+create policy "authenticated users may read assignments" on public.round_assignments for select to authenticated using (true);
+create policy "authenticated users may read tycoons" on public.tycoons for select to authenticated using (true);
+create policy "authenticated users may read catalog" on public.shop_catalog for select to authenticated using (true);
+create policy "authenticated users may read team shops" on public.team_shops for select to authenticated using (true);
+create policy "authenticated users may read results" on public.position_results for select to authenticated using (true);
+create policy "authenticated users may read transactions" on public.economy_transactions for select to authenticated using (true);

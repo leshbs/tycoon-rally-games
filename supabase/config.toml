@@ -1,0 +1,7 @@
+project_id = "rally-games"
+
+[api]
+enabled = true
+
+[auth]
+enabled = true
